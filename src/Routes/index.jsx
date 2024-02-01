@@ -12,10 +12,10 @@ export default function RoutePage(){
 
             {/* Container */}
             <Container>
-                
+
                 {/* Header */}
                 <Header>
-                
+
                 </Header>
     
                 {/* Onde as rotas serao renderizadas */}
