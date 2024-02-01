@@ -4,9 +4,9 @@ import Members from "../../Components/Members"
 export default function Home(){
     return(
         <ContainerDiscord>
-            {/* Navegacao de containers */}
+            {/* Navegacao de chat */}
             <BrowserChat>
-                
+
             </BrowserChat>
 
             {/* Container Chat */}
