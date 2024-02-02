@@ -28,6 +28,25 @@ export const Header = styled.header`
             border-radius:10px;
         }
     }
+
+    a{
+        text-decoration:none;
+        color:white;
+        font-family:arial;
+        display:flex;
+        align-items:center;
+
+        span{
+            display:none;
+            z-index:1;
+            background-color:#1e2124;
+            padding:10px;
+            border-radius:7px;
+            position:absolute;
+            left:70px;
+            
+        }
+    }
     
 `
 

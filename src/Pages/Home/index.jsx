@@ -14,6 +14,7 @@ export default function Home(){
             {/* Navegacao de chat */}
             <BrowserChat>
                 <Title>Repo Dev</Title>
+                
             </BrowserChat>
 
             {/* Container Chat */}
