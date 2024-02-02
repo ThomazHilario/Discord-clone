@@ -6,12 +6,15 @@ export const ChannelList = styled.ul`
     padding-left:10px;
     color:gray;
     font-family:arial;
+    font-size:14px;
     li{
         padding-left:8px;
         margin:4px 0px;
 
         button{
+            text-align:start;
             background-color:transparent;
+            width:90%;
             border:0px;
             border-radius:5px;
             color:gray;

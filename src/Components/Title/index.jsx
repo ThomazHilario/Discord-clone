@@ -6,5 +6,5 @@ export const Title = styled.h1`
     font-size:15px;
     font-weight:300;
     padding:15px;
-    box-shadow:0px 0px 2px black;
+    border-bottom:1px solid #1e2124;
 `

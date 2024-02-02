@@ -7,6 +7,12 @@ import { Chat } from "../../Components/Chat"
 import { ContainerChat } from "../../Components/ContainerChat"
 import { HeaderChat } from '../../Components/HeaderChat'
 
+// react icons - icons
+import { BiSolidInbox } from "react-icons/bi";
+import { IoIosHelpCircleOutline, IoIosNotificationsOff  } from "react-icons/io";
+import { BsFillPeopleFill } from "react-icons/bs";
+import { TbPinnedOff } from "react-icons/tb";
+
 import {Context} from '../../Context/'
 import { useContext, useState } from 'react'
 
@@ -26,8 +32,8 @@ export default function Home(){
 
                 <ChannelList>
                     Repositorios
-                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Repositorios Front-End</button></li>
-                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Repositorios Back-End</button></li>
+                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
                 </ChannelList>               
             </BrowserChat>
 
@@ -36,7 +42,18 @@ export default function Home(){
 
                 {/* HeaderChat */}
                 <HeaderChat>
+                    {/* nome do chat */}
                     <h1>{chatName}</h1>
+
+                    {/* nav do discord chat */}
+                    <nav>
+                        <IoIosNotificationsOff className="notification"/>
+                        <TbPinnedOff/>
+                        <BsFillPeopleFill className="contatos"/>
+                        <input type="text" placeholder="Buscar"/>
+                        <BiSolidInbox size={14}/>
+                        <IoIosHelpCircleOutline size={14}/>
+                    </nav>
                 </HeaderChat>
 
                 <ContainerChat>
