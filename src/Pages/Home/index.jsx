@@ -1,9 +1,10 @@
 import { ContainerDiscord } from "../../Components/ContainerDiscord"
-import { ContainerChat } from "../../Components/ContainerChat"
-import { Chat } from "../../Components/Chat"
 import { BrowserChat } from "../../Components/BrowserChat"
 import { Title } from "../../Components/Title"
-
+import { ContainerBody} from "../../Components/ContainerBody"
+import { Chat } from "../../Components/Chat"
+import { ContainerChat } from "../../Components/ContainerChat"
+import { HeaderChat } from '../../Components/HeaderChat'
 
 import Members from "../../Components/Members"
 
@@ -16,17 +17,24 @@ export default function Home(){
             </BrowserChat>
 
             {/* Container Chat */}
-            <ContainerChat>
+            <ContainerBody>    
 
-                {/* Chat */}
-                <Chat>
+                {/* HeaderChat */}
+                <HeaderChat>
+                    <h1>Repo Dev</h1>
+                </HeaderChat>
 
-                </Chat>
+                <ContainerChat>
+                    {/* Chat */}
+                    <Chat>
+                    
+                    </Chat>
+    
+                    {/* Component Members*/}
+                    <Members/>
+                </ContainerChat>
 
-                {/* Component Members*/}
-                <Members/>
-
-            </ContainerChat>
+            </ContainerBody>
         </ContainerDiscord>
     )
 }

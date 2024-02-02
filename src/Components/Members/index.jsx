@@ -7,13 +7,13 @@ export default function Members(){
 
     // Style div members
     const Members = styled.div`
-        height:100%;
-        width:20vw;
+        width:18vw;
         background-color:#292b2f;
         display:flex;
         flex-direction:column;
         aling-items:center;
         gap:10px;
+        grid-area:members;
 
         h1{
             color:#9E9E9E;
