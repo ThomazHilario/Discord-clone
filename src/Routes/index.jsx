@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { useContext } from 'react'
+import { Context } from '../Context'
 
 // Imagens 
 import DiscordImg from '../assets/icons/discordIcon.png'
@@ -12,6 +14,9 @@ import Home from '../Pages/Home'
 
 export default function RoutePage(){
 
+    // channel Name
+    const {setChannelName} = useContext(Context)
+
     // Click interativo do discord
     function handleFocus(value){
 
@@ -20,6 +25,7 @@ export default function RoutePage(){
             // Verificando se o value src da imagem e igual a umas das imagens
             if(value.src === img.src){
                 value.style.borderRadius = '10px'
+                setChannelName(value.nextElementSibling.textContent)
             } else{
                 img.style.borderRadius = '50%'
             }
@@ -49,6 +55,7 @@ export default function RoutePage(){
 
                 {/* Header */}
                 <Header>
+                    
                     <DiscordComponent>
                         <img src={DiscordImg} alt='imagem icon discord' className='icon' onClick={(e) => handleFocus(e.target)}/>
 
@@ -59,8 +66,9 @@ export default function RoutePage(){
                         <img src={DevImg} alt='icon dev' className='icon' onClick={(e) => handleFocus(e.target)} onMouseOver={spanblock} onMouseOut={spanNone}/>
 
                         {/* Name channel */}
-                        <span>RepoDev</span>
+                        <span>Repo Dev</span>
                     </Link>
+
                 </Header>
     
                 {/* Onde as rotas serao renderizadas */}

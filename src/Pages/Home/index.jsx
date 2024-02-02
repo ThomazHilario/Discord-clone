@@ -6,15 +6,20 @@ import { Chat } from "../../Components/Chat"
 import { ContainerChat } from "../../Components/ContainerChat"
 import { HeaderChat } from '../../Components/HeaderChat'
 
+import {Context} from '../../Context/'
+import { useContext } from 'react'
+
 import Members from "../../Components/Members"
 
 export default function Home(){
+
+    const { channelName } = useContext(Context)
+
     return(
         <ContainerDiscord>
             {/* Navegacao de chat */}
             <BrowserChat>
-                <Title>Repo Dev</Title>
-                
+                <Title>{channelName}</Title>               
             </BrowserChat>
 
             {/* Container Chat */}
@@ -22,7 +27,7 @@ export default function Home(){
 
                 {/* HeaderChat */}
                 <HeaderChat>
-                    <h1>Repo Dev</h1>
+                    <h1>{channelName}</h1>
                 </HeaderChat>
 
                 <ContainerChat>
