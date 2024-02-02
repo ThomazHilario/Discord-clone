@@ -2,6 +2,7 @@ import { ContainerDiscord } from "../../Components/ContainerDiscord"
 import { ContainerChat } from "../../Components/ContainerChat"
 import { Chat } from "../../Components/Chat"
 import { BrowserChat } from "../../Components/BrowserChat"
+import { Title } from "../../Components/Title"
 
 
 import Members from "../../Components/Members"
@@ -11,7 +12,7 @@ export default function Home(){
         <ContainerDiscord>
             {/* Navegacao de chat */}
             <BrowserChat>
-                
+                <Title>Repo Dev</Title>
             </BrowserChat>
 
             {/* Container Chat */}

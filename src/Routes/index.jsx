@@ -38,7 +38,9 @@ export default function RoutePage(){
                         <hr />
                     </DiscordComponent>
 
-                    <Link to='/'><img src={DevImg} alt='icon dev' className='icon' onClick={(e) => handleFocus(e.target)}/></Link>
+                    <Link to='/'>
+                        <img src={DevImg} alt='icon dev' className='icon' onClick={(e) => handleFocus(e.target)}/>
+                    </Link>
                 </Header>
     
                 {/* Onde as rotas serao renderizadas */}

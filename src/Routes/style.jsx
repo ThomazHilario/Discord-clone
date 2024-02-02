@@ -10,7 +10,7 @@ export const Container = styled.main`
 export const Header = styled.header`
     width:9vh;
     height:100%;
-    Background-color:rgb(32,32,32);
+    Background-color:#202225;
     display:flex;
     flex-direction:column;
     align-items:center;

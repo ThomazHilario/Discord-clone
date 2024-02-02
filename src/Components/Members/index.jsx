@@ -9,7 +9,7 @@ export default function Members(){
     const Members = styled.div`
         height:100%;
         width:20vw;
-        background-color:rgb(45,45,45);
+        background-color:#292b2f;
         display:flex;
         flex-direction:column;
         aling-items:center;
