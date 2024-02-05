@@ -30,11 +30,58 @@ export default function Home(){
             <BrowserChat>
                 <Title>{channelName}</Title>
 
-                <ChannelList>
-                    Repositorios
-                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                    <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                </ChannelList>               
+                <div>
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList>  
+                    <ChannelList>
+                        Repositorios
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
+                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                    </ChannelList> 
+                </div>                
             </BrowserChat>
 
             {/* Container Chat */}

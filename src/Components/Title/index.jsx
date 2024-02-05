@@ -7,4 +7,7 @@ export const Title = styled.h1`
     font-weight:300;
     padding:15px;
     border-bottom:1px solid #1e2124;
+    position:fixed;
+    background-color:#292b2f;
+    width:16.5%;
 `
