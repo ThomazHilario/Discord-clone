@@ -3,10 +3,9 @@ import { BrowserChat } from "../../Components/BrowserChat"
 import { ChannelList } from "../../Components/ChannelList"
 import { Title } from "../../Components/Title"
 import { ContainerBody} from "../../Components/ContainerBody"
-import { Chat } from "../../Components/Chat"
+import { Chat, ChatIntroduction } from "../../Components/Chat"
 import { ContainerChat } from "../../Components/ContainerChat"
 import { HeaderChat } from '../../Components/HeaderChat'
-import { ChatIntroduction } from "../../Components/ChatIntroduction"
 
 // react icons - icons
 import { BiSolidInbox } from "react-icons/bi";
@@ -22,14 +21,20 @@ import Members from "../../Components/Members"
 
 export default function Home(){
 
+    // Context channelName
     const { channelName } = useContext(Context)
 
+    // Context chatName
     const [chatName, setChatName] = useState('Front-End')
 
     function channelChatChange(text){
+        // Alterando o valor da state chatName
         setChatName(text)
 
+        // Percorrendo chats 
         document.querySelectorAll('.chat').forEach(chat => {
+
+            // Logica para exibir o chat 
             if(chat.dataset.attribute === text){
                 chat.classList.add('activeChat')
             } else{
@@ -46,12 +51,23 @@ export default function Home(){
 
                 <div>
                     <ChannelList>
-                        Repositorios
+                        Conteudos por area
                         <li>
                             <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Front-End</button>
                         </li>
                         <li>
                             <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Back-End</button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Livros</button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Cursos</button>
                         </li>
 
                     </ChannelList>
