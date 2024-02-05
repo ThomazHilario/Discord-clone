@@ -8,10 +8,13 @@ export const ChannelList = styled.ul`
     font-family:arial;
     font-size:14px;
     li{
-        padding-left:8px;
+        padding-left:5px;
         margin:4px 0px;
 
         button{
+            display:flex;
+            align-items:center;
+            gap:7px;
             text-align:start;
             background-color:transparent;
             width:90%;
@@ -27,6 +30,7 @@ export const ChannelList = styled.ul`
             &:hover{
                 background-color:rgba(66,69,73,0.800);
             }
+
         }
     }
 `

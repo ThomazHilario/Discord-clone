@@ -12,6 +12,9 @@ export const HeaderChat = styled.div`
         font-size:15px;
         font-weight:300;
         margin-left:20px;
+        display:flex;
+        aling-items:center;
+        gap:8px;
     }
 
     nav{

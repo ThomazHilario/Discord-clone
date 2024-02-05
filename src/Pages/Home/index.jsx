@@ -6,12 +6,14 @@ import { ContainerBody} from "../../Components/ContainerBody"
 import { Chat } from "../../Components/Chat"
 import { ContainerChat } from "../../Components/ContainerChat"
 import { HeaderChat } from '../../Components/HeaderChat'
+import { ChatIntroduction } from "../../Components/ChatIntroduction"
 
 // react icons - icons
 import { BiSolidInbox } from "react-icons/bi";
 import { IoIosHelpCircleOutline, IoIosNotificationsOff  } from "react-icons/io";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { TbPinnedOff } from "react-icons/tb";
+import { FiHash } from "react-icons/fi";
 
 import {Context} from '../../Context/'
 import { useContext, useState } from 'react'
@@ -22,7 +24,19 @@ export default function Home(){
 
     const { channelName } = useContext(Context)
 
-    const [chatName, setChatName] = useState('# Front-End')
+    const [chatName, setChatName] = useState('Front-End')
+
+    function channelChatChange(text){
+        setChatName(text)
+
+        document.querySelectorAll('.chat').forEach(chat => {
+            if(chat.dataset.attribute === text){
+                chat.classList.add('activeChat')
+            } else{
+                chat.classList.remove('activeChat')
+            }
+        })
+    }
 
     return(
         <ContainerDiscord>
@@ -34,10 +48,10 @@ export default function Home(){
                     <ChannelList>
                         Repositorios
                         <li>
-                            <button onClick={(e) => setChatName(e.target.textContent)}># Front-End</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Front-End</button>
                         </li>
                         <li>
-                            <button onClick={(e) => setChatName(e.target.textContent)}># Back-End</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Back-End</button>
                         </li>
 
                     </ChannelList>
@@ -50,7 +64,7 @@ export default function Home(){
                 {/* HeaderChat */}
                 <HeaderChat>
                     {/* nome do chat */}
-                    <h1>{chatName}</h1>
+                    <h1>{<FiHash size={20}/>} {chatName}</h1>
 
                     {/* nav do discord chat */}
                     <nav>
@@ -66,7 +80,25 @@ export default function Home(){
                 <ContainerChat>
                     {/* Chat */}
                     <Chat>
-                    
+                        {/* Introducao do chat */}
+                        <ChatIntroduction>
+                            <div className="hashtagcontainer">
+                                <FiHash size={50} color="white"/>
+                            </div>
+
+                            {/* Title */}
+                            <h1>Bem-vindo(a) a {<FiHash size={25}/>} {chatName}</h1>
+
+                            <p>Este e o comeco do canal # {chatName}</p>
+                        </ChatIntroduction>
+
+                        <div className="chat activeChat" data-attribute="Front-End">
+                                front-end
+                        </div>
+
+                        <div className="chat" data-attribute="Back-End">
+                                back-end
+                        </div>
                     </Chat>
     
                     {/* Component Members*/}
