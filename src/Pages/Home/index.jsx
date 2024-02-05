@@ -22,7 +22,7 @@ export default function Home(){
 
     const { channelName } = useContext(Context)
 
-    const [chatName, setChatName] = useState('Repositorios Front-End')
+    const [chatName, setChatName] = useState('# Front-End')
 
     return(
         <ContainerDiscord>
@@ -33,54 +33,14 @@ export default function Home(){
                 <div>
                     <ChannelList>
                         Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
+                        <li>
+                            <button onClick={(e) => setChatName(e.target.textContent)}># Front-End</button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => setChatName(e.target.textContent)}># Back-End</button>
+                        </li>
+
                     </ChannelList>
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList>  
-                    <ChannelList>
-                        Repositorios
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Front-End</button></li>
-                        <li><button onClick={(e) => setChatName(e.target.textContent)}>Back-End</button></li>
-                    </ChannelList> 
                 </div>                
             </BrowserChat>
 

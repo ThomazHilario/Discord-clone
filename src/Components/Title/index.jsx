@@ -9,5 +9,5 @@ export const Title = styled.h1`
     border-bottom:1px solid #1e2124;
     position:fixed;
     background-color:#292b2f;
-    width:16.5%;
+    width:16.5vw;
 `
