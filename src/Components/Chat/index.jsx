@@ -4,6 +4,11 @@ export const Chat = styled.div`
     height:100%;
     width:100%;
     font-family:arial;
+    overflow:scroll;
+
+    &::-webkit-scrollbar{
+        display:none;
+    }
 
     .chat{
         display:none;
@@ -12,8 +17,10 @@ export const Chat = styled.div`
     .activeChat{
         margin-top:10px;
         padding:15px;
-        display:block;
+        display:flex;
         color:red;
+        flex-direction:column;
+        gap:20px;
     }
     
 `
