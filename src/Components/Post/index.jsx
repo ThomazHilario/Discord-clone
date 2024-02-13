@@ -46,10 +46,11 @@ export const Post = styled.div`
             aling-items:start;
             gap:3px;
             padding:10px 10px;
-            margin-top:10px;
+            margin:10px 0px;
             width:420px;
             border-radius:8px;
-            background-color:rgba(36,36,36,0.4);            
+            background-color:rgba(36,36,36,0.4);
+            border-left:4px solid red;            
             
             .titlePlatform{
                 color:#9E9E9E;
@@ -65,6 +66,7 @@ export const Post = styled.div`
 
             .titleContent{
                 color:#349EE0;
+                text-decoration:none;
             }
 
             img{
