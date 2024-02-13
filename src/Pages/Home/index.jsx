@@ -1,11 +1,8 @@
 // import styled Components
 import { ContainerDiscord } from "../../Components/ContainerDiscord"
-import { BrowserChat } from "../../Components/BrowserChat"
-import { ChannelList } from "../../Components/ChannelList"
-import { Title } from "../../Components/Title"
+import { BrowserChat, ChannelList, Title } from "../../Components/BrowserChat"
 import { ContainerBody} from "../../Components/ContainerBody"
-import { Chat, ChatIntroduction } from "../../Components/Chat"
-import { ContainerChat } from "../../Components/ContainerChat"
+import { ContainerChat ,Chat, ChatIntroduction } from "../../Components/Chat"
 import { HeaderChat } from '../../Components/HeaderChat'
 import { Post } from "../../Components/Post"
 
@@ -62,10 +59,14 @@ export default function Home(){
                     <ChannelList>
                         Conteudos por area
                         <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Front-End</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Front-End
+                            </button>
                         </li>
                         <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Back-End</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Back-End
+                            </button>
                         </li>
 
                     </ChannelList>
@@ -73,10 +74,14 @@ export default function Home(){
                     <ChannelList>
                         Materiais
                         <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Livros</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
                         </li>
                         <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}Cursos</button>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
                         </li>
 
                     </ChannelList>

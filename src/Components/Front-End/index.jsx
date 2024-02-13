@@ -25,8 +25,7 @@ export default function Front_End(){
 
                 </div>
             </Post>
-
-            
+   
         </div>
     )
 }
