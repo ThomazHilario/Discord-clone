@@ -9,6 +9,8 @@ import { ContainerChat } from "../../Components/ContainerChat"
 import { HeaderChat } from '../../Components/HeaderChat'
 import { Post } from "../../Components/Post"
 
+import Front_End from "../../Components/Front-End"
+
 // react icons - icons
 import { BiSolidInbox } from "react-icons/bi";
 import { IoIosHelpCircleOutline, IoIosNotificationsOff  } from "react-icons/io";
@@ -116,28 +118,7 @@ export default function Home(){
                         </ChatIntroduction>
 
                         <div className="overflowChat">
-                            <div className="chat activeChat" data-attribute="Front-End">
-                                <Post>
-                                    <div className="profile"><img src={Fotoprofile} alt="imagem da foto de perfiil" /></div>
-
-                                    <div className="mensageUser">
-                                        <h4>Thomaz Alves </h4>
-                                        <p>Esse chat é destinado para as pessoas com interesse em desenvolvimento front-end</p>
-                                        <a href="https://www.youtube.com/watch?v=oPOKpSFqy-I" target="blank">https://www.youtube.com/watch?v=oPOKpSFqy-I</a>
-
-                                        <div className="contentLink">
-                                            <p className="titlePlatform">youtube</p>
-                                            <p className="creatorContent">rocketseat</p>
-                                            <a className="titleContent" href="https://www.youtube.com/watch?v=oPOKpSFqy-I" target="blank">Crie componentes DESSA FORMA no React (Pattern de composição)</a>
-
-                                            <img src="https://i.ytimg.com/vi/oPOKpSFqy-I/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLC6RNsCV0puLkEGBvm8cHyMSQ32Vg" alt="" />
-                                        </div>
-
-                                    </div>
-                                </Post>
-
-                                
-                            </div>
+                            <Front_End/>
 
                             <div className="chat" data-attribute="Back-End">
                                     back-end

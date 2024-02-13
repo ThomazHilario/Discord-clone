@@ -67,6 +67,7 @@ export const Post = styled.div`
             .titleContent{
                 color:#349EE0;
                 text-decoration:none;
+                font-weight:bold;
             }
 
             img{
