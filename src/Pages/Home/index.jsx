@@ -83,7 +83,8 @@ export default function Home(){
                         </li>
 
                     </ChannelList>
-                </div>                
+                </div>
+                
             </BrowserChat>
 
             {/* Container Chat */}
