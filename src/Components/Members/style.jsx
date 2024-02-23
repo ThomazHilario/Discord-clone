@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Style div members
 export const MembersDicord = styled.div`
-    width:270px;
+    width:300px;
     background-color:#292b2f;
     display:flex;
     flex-direction:column;
