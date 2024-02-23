@@ -12,7 +12,7 @@ export const BrowserChat = styled.div`
     }
 
     .containerChannelList{
-        height:88.5vh;
+        height:87.5vh;
         overflow:scroll;
 
         &::-webkit-scrollbar{
