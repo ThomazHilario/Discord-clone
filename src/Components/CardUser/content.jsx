@@ -42,11 +42,11 @@ export const ContentCard = styled.div`
             }
     
             svg{
-                position:relative;
+                position:absolute;
                 background-color:rgb(36, 36, 36);
                 border-radius:50%;
-                bottom:0rem;
-                left:-0.8rem;
+                bottom:0.5rem;
+                left:6.3rem;
                 transform:rotateY(180deg);
                 padding:1.5px;
             }
