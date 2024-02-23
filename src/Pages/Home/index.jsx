@@ -53,180 +53,185 @@ export default function Home(){
         <ContainerDiscord>
             {/* Navegacao de chat */}
             <BrowserChat>
-                <Title>{channelName}</Title>
+                <div id="containerInfo">
+                    <Title>{channelName}</Title>    
 
-                <div>
-                    <ChannelList>
-                        Conteudos por area
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Front-End
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Back-End
-                            </button>
-                        </li>
+                    <div id="containerRoll">
+                        <div className="containerChannelList">
+                            <ChannelList>
+                                Conteudos por area
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Front-End
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Back-End
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
+                            </ChannelList>
 
-                    <ChannelList>
-                        Materiais
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Livros
-                            </button>
-                        </li>
-                        <li>
-                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
-                                Cursos
-                            </button>
-                        </li>
+                            <ChannelList>
+                                Materiais
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Livros
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                        Cursos
+                                    </button>
+                                </li>
 
-                    </ChannelList>
-
-                    
+                            </ChannelList>
+                            
+                        </div>
+                        
+                    </div>
                 </div>
-                
+
                 <CardBoard/>
             </BrowserChat>
-
+            
+            
             {/* Container Chat */}
             <ContainerBody>    
 

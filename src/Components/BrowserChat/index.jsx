@@ -2,16 +2,22 @@ import styled from "styled-components";
 
 export const BrowserChat = styled.div`
     height:100vh;
-    width:20vw;
+    width:270px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
     background-color:#292b2f;
-    overflow:auto;
     &::-webkit-scrollbar{
         display:none;
     }
 
-    div{
-        margin-top:60px;
-        margin-bottom:70px;
+    .containerChannelList{
+        height:85vh;
+        overflow:scroll;
+
+        &::-webkit-scrollbar{
+            display:none;
+        }
     }
 `
 
@@ -57,7 +63,6 @@ export const Title = styled.h1`
     font-weight:300;
     padding:15px;
     border-bottom:1px solid #1e2124;
-    position:fixed;
     background-color:#292b2f;
-    width:16.5vw;
+    width:15.8vw;
 `
