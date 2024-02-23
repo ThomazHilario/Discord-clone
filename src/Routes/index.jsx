@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { Context } from '../Context'
 
 // Imagens 
-import DiscordImg from '../assets/icons/discordIcon.png'
+import DiscordImg from '../assets/icons/discordIcon.jpg'
 import DevImg from '../assets/icons/devIcon.png'
 
 // Styled Components
