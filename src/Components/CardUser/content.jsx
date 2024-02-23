@@ -21,6 +21,7 @@ export const ContentCard = styled.div`
         padding:1px 5px;
         background-color:transparent;
         border:0;
+        gap:10px;
 
         display:flex;
         align-items:center;
