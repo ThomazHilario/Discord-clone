@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const BrowserChat = styled.div`
     height:100vh;
     width:270px;
+    overflow:hidden;
     display:flex;
     flex-direction:column;
     justify-content:space-between;

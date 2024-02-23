@@ -33,6 +33,9 @@ export default function Home(){
     // Context chatName
     const [chatName, setChatName] = useState('Front-End')
 
+    // state - onMembers
+    const [onMembers,setOnMembers] = useState(true)
+
     function channelChatChange(text){
         // Alterando o valor da state chatName
         setChatName(text)
@@ -244,7 +247,7 @@ export default function Home(){
                     <nav>
                         <IoIosNotificationsOff className="notification"/>
                         <TbPinnedOff/>
-                        <BsFillPeopleFill className="contatos"/>
+                        <BsFillPeopleFill className="contatos" onClick={() => setOnMembers(onMembers === true ? false : true)}/>
                         <input type="text" placeholder="Buscar"/>
                         <BiSolidInbox size={14}/>
                         <IoIosHelpCircleOutline size={14}/>
@@ -278,7 +281,7 @@ export default function Home(){
                     </Chat>
     
                     {/* Component Members*/}
-                    <Members/>
+                    {onMembers && <Members/>}
                 </ContainerChat>
 
             </ContainerBody>

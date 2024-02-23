@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ContentCard = styled.div`
-    height:50px;
+    height:5.5vh;
     background-color: rgb(31, 32, 36);
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
 
     .interativeIcons{
         padding:0.5px;
@@ -21,7 +21,6 @@ export const ContentCard = styled.div`
         padding:1px 5px;
         background-color:transparent;
         border:0;
-        gap:10px;
 
         display:flex;
         align-items:center;
@@ -37,17 +36,17 @@ export const ContentCard = styled.div`
 
         .contentCardInfo{
             img{
-                height:32px;
+                height:3.6vh;
                 object-fit: cover;
                 border-radius:50%;
             }
     
             svg{
-                position:absolute;
+                position:relative;
                 background-color:rgb(36, 36, 36);
                 border-radius:50%;
-                bottom:0.5rem;
-                left:6.3rem;
+                top:0rem;
+                left:-0.8rem;
                 transform:rotateY(180deg);
                 padding:1.5px;
             }
