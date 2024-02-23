@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const BrowserChat = styled.div`
-    height:100%;
+    height:100vh;
     width:20vw;
     background-color:#292b2f;
-    overflow:scroll;
-
+    overflow:auto;
     &::-webkit-scrollbar{
         display:none;
     }
 
     div{
         margin-top:60px;
+        margin-bottom:70px;
     }
 `
 

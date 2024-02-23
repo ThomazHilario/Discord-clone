@@ -5,6 +5,8 @@ import { ContainerBody} from "../../Components/ContainerBody"
 import { ContainerChat ,Chat, ChatIntroduction } from "../../Components/Chat"
 import { HeaderChat } from '../../Components/HeaderChat'
 
+import CardBoard from "../../Components/CardUser"
+
 import Front_End from "../../Components/Tabs-home"
 import Cursos from "../../Components/Tabs-home/cursos"
 
@@ -83,8 +85,146 @@ export default function Home(){
                         </li>
 
                     </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    <ChannelList>
+                        Materiais
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Livros
+                            </button>
+                        </li>
+                        <li>
+                            <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
+                                Cursos
+                            </button>
+                        </li>
+
+                    </ChannelList>
+
+                    
                 </div>
                 
+                <CardBoard/>
             </BrowserChat>
 
             {/* Container Chat */}
