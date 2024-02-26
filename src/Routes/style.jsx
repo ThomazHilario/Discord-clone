@@ -16,6 +16,10 @@ export const Header = styled.header`
     align-items:center;
     gap:8px;
 
+    @media (max-width:560px){
+        display:none;
+    }
+
     img{
         border-radius:50%;
         height:50px;

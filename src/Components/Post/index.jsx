@@ -19,7 +19,7 @@ export const Post = styled.div`
 
     .mensageUser{
         h4{
-            font-size:16px;
+            font-size:1rem;
             font-family:arial;
             font-weight:500;
             color:rgba(123, 53, 222, 0.7);
@@ -30,10 +30,14 @@ export const Post = styled.div`
             color:#CFCFCA;
             font-weight:400;
             margin:5px 0px;
+            
+            @media (max-width:505px){
+                font-size:13px;
+            }
         }
 
         a{
-            font-size:15px;
+            font-size:0.9rem;
             color:#349EE0;
             font-family:inter;
             font-weight:lighter;
@@ -47,10 +51,14 @@ export const Post = styled.div`
             gap:3px;
             padding:10px 10px;
             margin:10px 0px;
-            width:420px;
+            width:430px;
             border-radius:8px;
             background-color:rgba(36,36,36,0.4);
-            border-left:4px solid red;            
+            border-left:4px solid red;   
+            
+            @media (max-width:505px){
+                width:100%;
+            }
             
             .titlePlatform{
                 color:#9E9E9E;
@@ -71,8 +79,8 @@ export const Post = styled.div`
             }
 
             img{
-                height:220px;
-                width:400px;
+                height:240px;
+                width:100%;
                 border-radius:10px;
                 margin:5px 0;
             }

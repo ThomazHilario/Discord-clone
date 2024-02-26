@@ -16,6 +16,7 @@ import { IoIosHelpCircleOutline, IoIosNotificationsOff  } from "react-icons/io";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { TbPinnedOff } from "react-icons/tb";
 import { FiHash } from "react-icons/fi";
+import { LuArrowLeft } from "react-icons/lu";
 
 // imports React
 import {Context} from '../../Context/'
@@ -69,6 +70,7 @@ export default function Home(){
                                         Front-End
                                     </button>
                                 </li>
+                                
                                 <li>
                                     <button onClick={(e) => channelChatChange(e.target.textContent)}>{<FiHash size={20}/>}
                                         Back-End
@@ -107,7 +109,10 @@ export default function Home(){
                 {/* HeaderChat */}
                 <HeaderChat>
                     {/* nome do chat */}
-                    <h1>{<FiHash size={20}/>} {chatName}</h1>
+                    <h1>
+                        <LuArrowLeft className="backIcon" size={20}/>
+                        {<FiHash size={20}/>} {chatName}
+                    </h1>
 
                     {/* nav do discord chat */}
                     <nav>

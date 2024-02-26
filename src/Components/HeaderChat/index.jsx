@@ -6,6 +6,9 @@ export const HeaderChat = styled.div`
     display:flex;
     justify-content:space-between;
     align-items:center;
+    @media (max-width:550px){
+        height:49.8px;
+    }
 
     h1{
         font-family:arial;
@@ -15,6 +18,15 @@ export const HeaderChat = styled.div`
         display:flex;
         aling-items:center;
         gap:8px;
+
+        .backIcon{
+            display:none;
+
+            @media (max-width:550px){
+                display:block;
+            }
+        }
+
     }
 
     nav{
@@ -47,6 +59,10 @@ export const HeaderChat = styled.div`
             height:49px;
             width:25px;
             cursor:pointer;
+        }
+
+        @media (max-width:550px){
+            display:none;
         }
     }
 
