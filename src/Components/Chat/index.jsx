@@ -10,11 +10,6 @@ export const Chat = styled.div`
     height:100%;
     width:100%;
     font-family:arial;
-    overflow:scroll;
-
-    &::-webkit-scrollbar{
-        display:none;
-    }
 
     .chat{
         display:none;
@@ -27,6 +22,15 @@ export const Chat = styled.div`
         color:red;
         flex-direction:column;
         gap:20px;
+    }
+
+    .overflowChat{
+        overflow:scroll;
+        height:91%;
+
+        &::-webkit-scrollbar{
+            display:none;
+        }
     }
     
 `
@@ -59,4 +63,23 @@ export const ChatIntroduction = styled.div`
         color:gray;
     }
 
+`
+
+export const InputBoxText = styled.input.attrs({placeholder:'você não tem permissão para enviar mensagens neste canal'})`
+
+    display:block;
+    width:95%;
+    padding-left:20px;
+    margin:auto;
+    border:0;
+    border-radius:5px;
+    outline:0;
+    cursor:not-allowed;
+
+    background-color:rgba(66,69,73,0.200);
+    position:relative;
+    height:40px;
+
+    font-size:16px;
+    font-weight:100;
 `

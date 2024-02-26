@@ -2,7 +2,7 @@
 import { ContainerDiscord } from "../../Components/ContainerDiscord"
 import { BrowserChat, ChannelList, Title } from "../../Components/BrowserChat"
 import { ContainerBody} from "../../Components/ContainerBody"
-import { ContainerChat ,Chat, ChatIntroduction } from "../../Components/Chat"
+import { ContainerChat ,Chat, ChatIntroduction,InputBoxText } from "../../Components/Chat"
 import { HeaderChat } from '../../Components/HeaderChat'
 
 import CardBoard from "../../Components/CardUser"
@@ -122,27 +122,31 @@ export default function Home(){
                 <ContainerChat>
                     {/* Chat */}
                     <Chat>
-                        {/* Introducao do chat */}
-                        <ChatIntroduction>
-                            <div className="hashtagcontainer">
-                                <FiHash size={50} color="white"/>
-                            </div>
-
-                            {/* Title */}
-                            <h1>Bem-vindo(a) a {<FiHash size={25}/>} {chatName}</h1>
-
-                            <p>Este e o comeco do canal # {chatName}</p>
-                        </ChatIntroduction>
 
                         <div className="overflowChat">
+                            {/* Introducao do chat */}
+                            <ChatIntroduction>
+                                <div className="hashtagcontainer">
+                                    <FiHash size={50} color="white"/>
+                                </div>
+
+                                {/* Title */}
+                                <h1>Bem-vindo(a) a {<FiHash size={25}/>} {chatName}</h1>
+
+                                <p>Este e o comeco do canal # {chatName}</p>
+                            </ChatIntroduction>
+
                             <Front_End/>
 
                             <div className="chat" data-attribute="Back-End">
-                                    back-end
+                                back-end
                             </div>
 
                             <Cursos/>
                         </div>
+
+                        <InputBoxText/>
+
                     </Chat>
     
                     {/* Component Members*/}
