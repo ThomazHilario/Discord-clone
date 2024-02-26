@@ -6,6 +6,9 @@ export const ContentCard = styled.div`
     display:flex;
     align-items:center;
     gap:10px;
+    @media (max-width:922px){
+        display:none;
+    }
 
     .interativeIcons{
         padding:0.5px;

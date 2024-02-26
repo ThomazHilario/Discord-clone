@@ -8,7 +8,7 @@ export const Container = styled.main`
 
 // Header
 export const Header = styled.header`
-    width:9vh;
+    width:70px;
     height:100%;
     Background-color:#202225;
     display:flex;

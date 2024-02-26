@@ -8,6 +8,15 @@ export const BrowserChat = styled.div`
     flex-direction:column;
     justify-content:space-between;
     background-color:#292b2f;
+
+    @media (max-width:848px){
+        width:36.5%;
+    }
+
+    @media (max-width:765px){
+        display:none;
+    }
+
     &::-webkit-scrollbar{
         display:none;
     }

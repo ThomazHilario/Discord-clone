@@ -10,6 +10,7 @@ export const Chat = styled.div`
     height:100%;
     width:100%;
     font-family:arial;
+    overflow:hidden;
 
     .chat{
         display:none;

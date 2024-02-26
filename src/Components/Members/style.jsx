@@ -10,6 +10,10 @@ export const MembersDicord = styled.div`
     gap:10px;
     grid-area:members;
 
+    @media (max-width:1140px){
+        display:none;
+    }
+
     h1{
         color:#9E9E9E;
         font-size:15px;

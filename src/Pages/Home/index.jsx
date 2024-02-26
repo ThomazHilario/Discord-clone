@@ -55,6 +55,7 @@ export default function Home(){
     return(
         <ContainerDiscord>
             {/* Navegacao de chat */}
+            
             <BrowserChat>
                 <div id="containerInfo">
                     <Title>{channelName}</Title>    
@@ -90,7 +91,7 @@ export default function Home(){
                                 </li>
 
                             </ChannelList>
-                          
+                        
                         </div>
                         
                     </div>
