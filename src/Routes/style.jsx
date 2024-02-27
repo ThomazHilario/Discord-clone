@@ -16,7 +16,7 @@ export const Header = styled.header`
     align-items:center;
     gap:8px;
 
-    @media (max-width:560px){
+    @media (max-width:580px){
         display:none;
     }
 
