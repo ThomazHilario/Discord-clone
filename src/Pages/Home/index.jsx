@@ -6,6 +6,7 @@ import { ContainerChat ,Chat, ChatIntroduction,InputBoxText } from "../../Compon
 import { HeaderChat } from '../../Components/HeaderChat'
 
 import CardBoard from "../../Components/CardUser"
+import BrowserChatMobile from "../../Components/BrowserChatMobile"
 
 import Front_End from "../../Components/Tabs-home"
 import Cursos from "../../Components/Tabs-home/cursos"
@@ -16,7 +17,6 @@ import { IoIosHelpCircleOutline, IoIosNotificationsOff  } from "react-icons/io";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { TbPinnedOff } from "react-icons/tb";
 import { FiHash } from "react-icons/fi";
-import { LuArrowLeft } from "react-icons/lu";
 
 // imports React
 import {Context} from '../../Context/'
@@ -109,10 +109,10 @@ export default function Home(){
                 {/* HeaderChat */}
                 <HeaderChat>
                     {/* nome do chat */}
-                    <h1>
-                        <LuArrowLeft className="backIcon" size={20}/>
+                    <div>
+                        <BrowserChatMobile channelChatChange={channelChatChange} channelName={channelName}/>
                         {<FiHash size={20}/>} {chatName}
-                    </h1>
+                    </div>
 
                     {/* nav do discord chat */}
                     <nav>

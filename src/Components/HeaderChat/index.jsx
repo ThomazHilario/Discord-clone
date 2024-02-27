@@ -10,7 +10,7 @@ export const HeaderChat = styled.div`
         height:49.8px;
     }
 
-    h1{
+    div{
         font-family:arial;
         font-size:15px;
         font-weight:300;
@@ -18,6 +18,12 @@ export const HeaderChat = styled.div`
         display:flex;
         aling-items:center;
         gap:8px;
+
+
+        button{
+            background-color:transparent;
+            border:0;
+        }
 
         .backIcon{
             display:none;
