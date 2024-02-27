@@ -9,7 +9,7 @@ export const BrowserChat = styled.div`
     justify-content:space-between;
     background-color:#292b2f;
 
-    @media (max-width:848px){
+    @media (max-width:863px){
         width:36.5%;
     }
 
