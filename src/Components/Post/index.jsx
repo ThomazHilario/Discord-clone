@@ -32,7 +32,7 @@ export const Post = styled.div`
             margin:5px 0px;
             
             @media (max-width:505px){
-                font-size:13px;
+                font-size:0.8rem;
             }
         }
 
@@ -57,7 +57,7 @@ export const Post = styled.div`
             border-left:4px solid red;   
             
             @media (max-width:505px){
-                width:100%;
+                width:320px;
             }
             
             .titlePlatform{
@@ -69,13 +69,16 @@ export const Post = styled.div`
                 font-family:inter;
                 font-weight:400;
                 color:white;
-                font-size:14px;
+                font-size:0.85rem;
             }
 
             .titleContent{
                 color:#349EE0;
                 text-decoration:none;
                 font-weight:bold;
+                @media (max-width:505px){
+                    width:320px;
+                }
             }
 
             img{
